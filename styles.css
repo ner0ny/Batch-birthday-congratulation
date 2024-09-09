@@ -1,0 +1,97 @@
+.dialog {
+  background-color: #ffffff;
+  border-radius: 10px;
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+  padding: 20px;
+  width: 400px;
+  max-width: 100%;
+  margin: 50px auto;
+  font-family: "Arial", sans-serif;
+}
+
+.dialog__title {
+  font-size: 24px;
+  font-weight: bold;
+  margin-bottom: 20px;
+  color: #333;
+  text-align: center;
+}
+
+.dialog__group {
+  margin-bottom: 15px;
+}
+
+.label {
+  font-size: 14px;
+  font-weight: bold;
+  color: #666;
+  display: block;
+  margin-bottom: 5px;
+}
+
+.dialog__input {
+  width: 100%;
+  padding: 8px;
+  font-size: 14px;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  box-sizing: border-box;
+  transition: border-color 0.3s;
+}
+
+.dialog__input:focus {
+  border-color: #007bff;
+  outline: none;
+}
+
+.dialog__buttons {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 20px;
+}
+
+.dialog__button {
+  padding: 10px 20px;
+  font-size: 14px;
+  font-weight: bold;
+  color: #fff;
+  background-color: #007bff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.dialog__button--cancel {
+  background-color: #dc3545;
+}
+
+.dialog__button:hover {
+  background-color: #0056b3;
+}
+
+.dialog__button--cancel:hover {
+  background-color: #c82333;
+}
+
+.dialog__progress-bar {
+  height: 8px;
+  background-color: #e9ecef;
+  border-radius: 5px;
+  overflow: hidden;
+  margin-top: 20px;
+}
+
+.dialog__progress-bar-value {
+  height: 100%;
+  width: 0;
+  background-color: #007bff;
+  transition: width 0.4s ease;
+}
+
+.dialog__status {
+  font-size: 14px;
+  color: #333;
+  text-align: center;
+  margin-top: 10px;
+}

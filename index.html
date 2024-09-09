@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Batch Birthday Congratulation</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <div class="dialog">
+      <h1 class="dialog__title">Batch Birthday Congratulation</h1>
+      <div class="dialog__group">
+        <label for="startDate" class="label">Start Date:</label>
+        <input
+          type="date"
+          id="startDate"
+          name="startDate"
+          class="dialog__input"
+        />
+      </div>
+      <div class="dialog__group">
+        <label for="endDate" class="label">End Date:</label>
+        <input type="date" id="endDate" name="endDate" class="dialog__input" />
+      </div>
+      <div class="dialog__buttons">
+        <button
+          onclick="startProcessing()"
+          class="dialog__button dialog__button--start"
+        >
+          Start
+        </button>
+        <button
+          onclick="cancelProcessing()"
+          class="dialog__button dialog__button--cancel"
+        >
+          Cancel
+        </button>
+      </div>
+      <div class="dialog__progress-bar">
+        <div class="dialog__progress-bar-value"></div>
+      </div>
+      <p class="dialog__status">Processed contacts 0 from 0.</p>
+    </div>
+    <script src="https://secure.aadcdn.microsoftonline-p.com/lib/1.0.0/js/adal.min.js"></script>
+    <script src="https://smtpjs.com/v3/smtp.js"></script>
+    <script src="script.js"></script>
+  </body>
+</html>
