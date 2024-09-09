@@ -1,7 +1,7 @@
 var organizationURI = "https://org5d764994.crm11.dynamics.com";
 var tenant = "qsolutions670.onmicrosoft.com";
 var clientId = "aeb1c4ae-6990-4b20-8975-2fe6af68d4cc";
-var pageUrl = "http://localhost:5500/Task5.html";
+var pageUrl = "https://ner0ny.github.io/Batch-birthday-congratulation/";
 var user, authContext;
 
 var apiVersion = "/api/data/v9.2/";
