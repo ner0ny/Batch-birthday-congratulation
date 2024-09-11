@@ -1,6 +1,6 @@
-var organizationURI = "https://org5d764994.crm11.dynamics.com";
-var tenant = "qsolutions670.onmicrosoft.com";
-var clientId = "aeb1c4ae-6990-4b20-8975-2fe6af68d4cc";
+var organizationURI = "https://org25c38fde.crm11.dynamics.com/";
+var tenant = "qsolutions494.onmicrosoft.com";
+var clientId = "559ea6a1-7e00-4cda-a4aa-e61a43e57a01";
 var pageUrl = "https://ner0ny.github.io/Batch-birthday-congratulation/";
 var user, authContext;
 
@@ -56,12 +56,16 @@ function normalizeDate(date) {
 function startProcessing() {
   isCancelled = false;
 
-  var startDate = normalizeDate(
-    new Date(document.getElementById("startDate").value)
-  );
-  var endDate = normalizeDate(
-    new Date(document.getElementById("endDate").value)
-  );
+  var startDateValue = document.getElementById("startDate").value;
+  var endDateValue = document.getElementById("endDate").value;
+
+  if (!startDateValue || !endDateValue) {
+    alert(getLocalizedString(localization, "selectDate"));
+    return;
+  }
+
+  var startDate = normalizeDate(new Date(startDateValue));
+  var endDate = normalizeDate(new Date(endDateValue));
   var today = normalizeDate(new Date());
   var maxEndDate = normalizeDate(new Date());
   maxEndDate.setDate(maxEndDate.getDate() + 7);
