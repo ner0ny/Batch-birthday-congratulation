@@ -62,7 +62,7 @@ function startProcessing() {
   var endDateValue = document.getElementById("endDate").value;
 
   if (!startDateValue || !endDateValue) {
-    alert(getLocalizedString(localization, "selectDate"));
+    alert("Please select a date.");
     return;
   }
 
