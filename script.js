@@ -20,7 +20,9 @@ document.onreadystatechange = function () {
   if (document.readyState == "complete") {
     authenticate();
     if (!user) {
-      authContext.login();
+      authContext.login({
+        extraQueryParameter: "prompt=consent",
+      });
     }
   }
 };
