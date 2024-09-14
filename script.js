@@ -205,7 +205,7 @@ function sendBirthdayGreeting(address, email, firstName, lastName) {
     Email.send({
       Host: "smtp.elasticemail.com",
       Username: "gribovskijvladimir0@gmail.com",
-      Password: "D4F7435DC5FA5535970D89E3F85D6AAA1323",
+      Password: "F520F8C56542B75D42EC857FFFF4E5EA6468",
       To: email,
       From: "gribovskijvladimir0@gmail.com",
       Subject: "Happy Birthday",
